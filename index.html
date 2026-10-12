@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <div class="app-layout">
+    <header class="quiz-sidebar">
+      <div class="brand">
+        <span class="brand-icon">⚡</span>
+        <h2><button id="brand-btn">QuizHub</button></h2>
+      </div>
+
+      <nav class="quiz-menu">
+        <span class="menu-label">Ընտրել կատեգորիան</span>
+        <ul>
+          <li>
+            <a href="#" class="quiz-type-btn active">
+              <span class="icon">💻</span>
+              <span class="text">Ծրագրավորումի վիկտորինա</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="quiz-type-btn">
+              <span class="icon">📐</span>
+              <span class="text">Մաթեմատիկական վիկտորինա</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="quiz-type-btn">
+              <span class="icon">🔬</span>
+              <span class="text">Գիտական ​​վիկտորինա
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="quiz-type-btn">
+              <span class="icon">🌍</span>
+              <span class="text">Երկրագիտության վիկտորինա</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="quiz-type-btn">
+              <span class="icon">📜</span>
+              <span class="text">Պատմության վիկտորինա</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="quiz-content">
+      <div class="quiz-container" id="quiz-app" aria-live="polite">
+        <p>Loading quizzes...</p>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
